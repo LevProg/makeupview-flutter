@@ -17,6 +17,9 @@ jobs:
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.22.2'  # Укажите версию Flutter, используемую в вашем проекте
+        
+    - name: Update Flutter
+      run: flutter upgrade
 
     - name: Install dependencies
       run: flutter pub get
